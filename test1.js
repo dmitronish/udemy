@@ -55,6 +55,7 @@
 // console.log(incr);
 // console.log(decr);
 
+// консольное приложение
 const numberOfFilms = +prompt("Сколько фильмов вы просмотрели?", "");
 const personalMuvieDb = {
     count: numberOfFilms,
