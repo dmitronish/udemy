@@ -55,3 +55,19 @@
 // console.log(incr);
 // console.log(decr);
 
+const numberOfFilms = +prompt("Сколько фильмов вы просмотрели?", "");
+const personalMuvieDb = {
+    count: numberOfFilms,
+    muvies: {},
+    actors: {},
+    genres: [],
+    private: false
+};
+const lastSeeMuvie = prompt("Последний из просмотренных фильмов?", ""),
+    ocenka = prompt("На сколько ецените его?", ""),
+    lastSeeMuvie2 = prompt("Последний из просмотренных фильмов?", ""),
+    ocenka2 = prompt("На сколько ецените его?", "");
+
+personalMuvieDb.muvies[lastSeeMuvie] = ocenka;
+personalMuvieDb.muvies[lastSeeMuvie2] = ocenka2;
+console.log(personalMuvieDb);
